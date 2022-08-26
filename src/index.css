@@ -1,13 +1,105 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@300;400;500;600;700&display=swap');
+
+*{
+  box-sizing: border-box;
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  margin: 0;
+  font-family: 'Karla', sans-serif;
+  background-color: #8adeff;
+  color: #202020;
 }
+
+.input-weather{
+  margin: 20px;
+}
+
+.input-weather > input{
+  padding: 12px;
+  border: none;
+  border-radius: 20px;
+  text-align: center;
+  background-color: #daf2fc;
+}
+
+.input-weather > input:focus{
+  outline: none;
+}
+
+.input-weather > input::placeholder{
+  color: #585858;
+}
+
+.main-wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+}
+
+.city-title{
+  font-weight: 700;
+  font-size: 36px;
+  margin: 12px;
+}
+
+.temp-title{
+  font-weight: 700;
+  font-size: 54px;
+  margin-left: 15px;
+}
+
+.min-max-temp{
+  display: flex;
+  margin: 20px;
+}
+
+.min-max-temp > h4 {
+  margin: 12px;
+}
+
+.weather-details{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 600px;
+  padding: 2em;
+
+  background: rgba( 255, 255, 255, 0.25 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 10px );
+  -webkit-backdrop-filter: blur( 10px );
+  border-radius: 20px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.card-wrapper-title{
+  margin-bottom: 30px;
+}
+
+.card-wrapper{
+  display: grid;
+  grid-template-columns: 150px 150px;
+  grid-row: auto auto;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+
+.card{
+  background-color: #89dafa;
+  border-radius: 20px;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card > h4{
+  color: #0f0f0f;
+  margin-bottom: 10px;
+}
+
